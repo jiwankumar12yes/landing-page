@@ -1,0 +1,533 @@
+<!-- 
+Extra Practice for tailwind
+Reference  website:-
+          https://templates.webwave.me/l4ceve
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-*****"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style6.css" />
+    <title>Practice-6</title>
+    <style>
+      .app-container {
+        max-width: 1350px;
+        /* margin: auto; */
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="fixed z-20 top-0 w-full bg-[#F9F9F9] border-b border-b-gray-300"
+    >
+      <nav class="app-container m-auto flex items-center justify-between">
+        <a href="" class="inline w-24 text-left"
+          ><img
+            src="./images/logo2.jpg"
+            alt="Logo"
+            class="w-24 inline shadow-2xs"
+        /></a>
+        <ul class="lg:flex gap-20 hidden font-medium text-lg">
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:bg-gray-200 px-2 py-1 rounded hover:underline-offset-1"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:bg-gray-200 px-2 py-1 rounded hover:underline-offset-1"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:bg-gray-200 px-2 py-1 rounded hover:underline-offset-1"
+              >Offer</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:bg-gray-200 px-2 py-1 rounded hover:underline-offset-1"
+              >Contact</a
+            >
+          </li>
+          <li class="">
+            <a
+              href=""
+              class="hover:underline hover:bg-gray-200 px-4 py-2 rounded hover:underline-offset-1 bg-[#1d3751] text-white hover:text-black px-"
+              >+91 9812387839</a
+            >
+          </li>
+        </ul>
+        <img
+          src="images/burger-menu-svgrepo-com.svg"
+          class="w-14 lg:hidden lg:mx-auto"
+          alt=""
+        />
+      </nav>
+    </header>
+
+    <div class="hero bg-[#f9f9f9] flex flex-col md:flex-row mt-24 mb-16">
+      <div class="md:w-1/4 md:ms-auto app-container md:my-auto my-5">
+        <h1 class="font-medium text-7xl mb-5">Let us inspire you</h1>
+        <p class="font-serif text-xl my-3">
+          We help companies achieve ambitious goals
+        </p>
+        <button
+          type="button"
+          class="uppercase bg-[#1d3751] hover:cursor-pointer hover:opacity-90 text-white px-4 py-2"
+        >
+          Consultation
+        </button>
+        <button
+          class="uppercase text-[#1d3751] px-4 py-2 hover:cursor-pointer"
+          type="button"
+        >
+          Offers
+        </button>
+      </div>
+      <div class="hero-banner">
+        <img src="images/hero" alt="" />
+      </div>
+    </div>
+
+    <section class="about-us app-container mx-auto">
+      <h2 class="font-medium text-4xl text-center text-slate-700">About us</h2>
+      <div class="flex flex-col lg:flex-row gap-10 my-10">
+        <img
+          src="images/about-us.webp"
+          alt=""
+          class="lg:w-1/2 w-full h-auto object-cover"
+        />
+        <div class="inline-flex gap-10 flex-wrap ms-auto">
+          <div
+            class="card bg-[#F5F5F5] w-full md:w-[calc(50%-20px)] h-auto p-8"
+          >
+            <img src="images/select.png" alt="" class="h-8" />
+            <h3 class="font-semibold my-5">A personalized approach</h3>
+            <p class="font-normal text-slate-800 line-clamp-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              qui, modi sit, aliquam eveniet, vero nam reiciendis soluta dolorem
+              ea laborum ducimus consequuntur! Ad, excepturi? Enim quidem minus
+              dolor magnam!
+            </p>
+          </div>
+          <div
+            class="card bg-[#F5F5F5] w-full md:w-[calc(50%-20px)] h-auto p-8"
+          >
+            <img src="images/technology.png" class="h-8" alt="" />
+            <h3 class="font-semibold my-5">Technologies</h3>
+            <p class="font-normal text-slate-800 line-clamp-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+              totam dicta numquam obcaecati quidem doloribus dolor saepe? Aut
+              illum fuga omnis maiores, cumque obcaecati nisi nulla amet
+              similique sint eligendi?
+            </p>
+          </div>
+          <div
+            class="card bg-[#F5F5F5] w-full md:w-[calc(50%-20px)] h-auto p-8"
+          >
+            <img src="images/time.png" alt="" class="h-8" />
+            <h3 class="font-semibold my-5">Timeliness</h3>
+            <p class="font-normal text-slate-800 line-clamp-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              consectetur. Obcaecati, architecto quo et debitis laborum ea
+              sequi. Ad voluptas cupiditate rem quis! Repudiandae eligendi quia
+              sint alias, accusamus magnam.
+            </p>
+          </div>
+          <div
+            class="card bg-[#F5F5F5] w-full md:w-[calc(50%-20px)] h-auto p-8"
+          >
+            <img src="images/user.png" class="h-8" alt="" />
+            <h3 class="font-semibold my-5">Professionalism</h3>
+            <p class="font-normal text-slate-800 line-clamp-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+              fugit nisi minima, ducimus tempora distinctio saepe labore dolorum
+              molestias inventore voluptatibus ea ab aliquid iste in sit animi
+              explicabo cupiditate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers bg-[#1D3752] py-10">
+      <div class="app-container text-center mx-auto text-white">
+        <h2 class="font-medium text-4xl text-center text-slate-100 py-5">
+          Offer
+        </h2>
+        <div
+          class="offer-container flex flex-wrap gap-x-48 gap-y-28 justify-between md:justify-evenly py-5"
+        >
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)] flex flex-col justify-center"
+          >
+            <img
+              src="images/price-tag.png"
+              alt="Offer"
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 1</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)]"
+          >
+            <img
+              src="images/special-offer.png"
+              alt=""
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 2</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)]"
+          >
+            <img
+              src="images/discount.png"
+              alt=""
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 3</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)]"
+          >
+            <img
+              src="images/tag.png"
+              alt=""
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 4</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)]"
+          >
+            <img
+              src="images/tag (1).png"
+              alt=""
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 5</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+          <div
+            class="offer-item w-full md:w-[calc(50%-192px)] lg:w-[calc(33.34%-192px)]"
+          >
+            <img
+              src="images/special-offer.png"
+              alt=""
+              class="w-20 bg-white rounded-full p-2 m-auto"
+            />
+            <h2 class="font-['Times_New_Roman',serif] text-3xl">Offer 6</h2>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              dolor hic ipsam, distinctio tenetur labore nostrum. Assumenda
+              sapiente, asperiores eaque similique laboriosam mollitia, earum
+              suscipit numquam aliquid sint ut. Dolore.
+            </p>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="uppercase mt-14 px-5 py-3 hover:opacity-85 bg-gray-200 rounded text-[#1D3752] font-sans font-semibold shadow-2xs hover:cursor-pointer"
+        >
+          Consultation
+        </button>
+      </div>
+    </section>
+
+    <section class="bg-[#F5F5F5] py-10 h-auto">
+      <div
+        class="app-container mx-auto grid grid-cols-1 md:grid-cols-[repeat(2,minmax(350px,1fr))] lg:gap-10 gap-5 py-5"
+      >
+        <div class="pictures md:relative static md:order-1 order-3 z-0">
+          <img
+            src="images/p1.webp"
+            alt=""
+            class="md:absolute md:block hidden top-0 left-0 object-cover object-top md:w-1/2"
+          />
+          <img
+            src="images/p2.webp"
+            alt=""
+            class="md:absolute md:block hidden right-0 bottom-0 top-6 object--left md:w-1/2 h-full object-cover border-26 border-[#F5F5F5]"
+          />
+          <img
+            src="images/p3.webp"
+            alt=""
+            class="md:absolute md:block static h-4/5 w-full md:h-1/2 left-0 bottom-0 object-cover border-26 border-b-0 border-[#F5F5F5]"
+          />
+        </div>
+        <div class="flex flex-col py-10 md:order-2 order-1">
+          <h1 class="font-semibold text-3xl font-[DM_Serif_Text] mx-auto">
+            Effects of work
+          </h1>
+          <div class="flex">
+            <span
+              class="bg-[#1D3752] m-auto px-7 py-5 self-start rounded-full text-white"
+              >1</span
+            >
+            <div>
+              <h2 class="font-bold text-2xl font-[Roboto_Mono] mt-12 ms-4">
+                Effect 1
+              </h2>
+              <p class="font-[IBM_Plex_Serif] text-lg ms-4">
+                The cooperation will help you reach the set goals, for example,
+                increasing the number of customers, prestige or trust in the
+                company among the audience.
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <span
+              class="bg-[#1D3752] m-auto px-7 py-5 self-start rounded-full text-white"
+              >2</span
+            >
+            <div>
+              <h2 class="font-bold text-2xl font-[Roboto_Mono] mt-12 ms-4">
+                Effect 2
+              </h2>
+              <p class="font-[IBM_Plex_Serif] text-lg ms-4">
+                The cooperation will help you reach the set goals, for example,
+                increasing the number of customers, prestige or trust in the
+                company among the audience.
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <span
+              class="bg-[#1D3752] m-auto px-7 py-5 self-start rounded-full text-white"
+              >3</span
+            >
+            <div>
+              <h2 class="font-bold text-2xl font-[Roboto_Mono] mt-12 ms-4">
+                Effect 3
+              </h2>
+              <p class="font-[IBM_Plex_Serif] text-lg ms-4">
+                The cooperation will help you reach the set goals, for example,
+                increasing the number of customers, prestige or trust in the
+                company among the audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="opinions app-container m-auto text-center my-10">
+      <h2 class="font-bold text-4xl font-[Space_Grotesk]">Opinions</h2>
+      <div
+        class="opinions container grid gap-5 lg:gap-10 md:grid-cols-1 lg:grid-cols-[repeat(2,minmax(300px,1fr))] mx-auto "
+      >
+        <div class="flex flex-col lg:flex-row gap-5 py-8">
+          <img
+            src="images/u1"
+            class="rounded-full aspect-square w-3/12 h-2/3 object-cover object-top m-auto lg:m-0"
+            alt=""
+          />
+          <div>
+            <q class="font-[Raleway] text-xl text-left">
+              Professional approach to the customer. You can always count on
+              support and clarification of nagging issues. Ms. Monica, reminds
+              you of all your obligations and makes sure to provide the
+              necessary documentation in a timely manner!
+            </q>
+            <h2 class="font-[Sekuya] text-sm italic"><em>Joe Smith</em></h2>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 py-8">
+          <img
+            src="images/u2"
+            class="rounded-full aspect-square w-3/12 h-2/3 object-cover object-center m-auto lg:m-0"
+            alt=""
+          />
+          <div>
+            <q class="font-[Raleway] text-xl text-left">
+              Professional approach to the customer. You can always count on
+              support and clarification of nagging issues. Ms. Monica, reminds
+              you of all your obligations and makes sure to provide the
+              necessary documentation in a timely manner!
+            </q>
+            <h2 class="font-[Sekuya] text-sm italic"><em>Joe Smith</em></h2>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 py-8">
+          <img
+            src="images/u2"
+            class="rounded-full aspect-square w-3/12 h-2/3 object-cover object-center m-auto lg:m-0"
+            alt=""
+          />
+          <div>
+            <q class="font-[Raleway] text-xl">
+              Professional approach to the customer. You can always count on
+              support and clarification of nagging issues. Ms. Monica, reminds
+              you of all your obligations and makes sure to provide the
+              necessary documentation in a timely manner!
+            </q>
+            <h2 class="font-[Sekuya] text-sm italic"><em>Joe Smith</em></h2>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 py-8">
+          <img
+            src="images/u1"
+            class="rounded-full aspect-square w-3/12 h-2/3 object-cover object-top m-auto lg:m-0"
+            alt=""
+          />
+          <div>
+            <q class="font-[Raleway] text-xl">
+              Professional approach to the customer. You can always count on
+              support and clarification of nagging issues. Ms. Monica, reminds
+              you of all your obligations and makes sure to provide the
+              necessary documentation in a timely manner!
+            </q>
+            <h2 class="font-[Sekuya] text-sm italic "><em>Joe Smith</em></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section bg-[url(images/contact.webp)] py-10">
+      <div class="app-container mx-auto text-white text-center">
+        <h2 class="py-10 font-[Funnel_Sans] font-bold text-4xl">Write to us</h2>
+        <form
+          action=""
+          class="text-left w-full md:w-2/3 mx-auto gap-6 font-[Delius] font-semibold text-xl [&_input]:mb-7 [&_label]:mb-2"
+        >
+          <label for="name" class="block">Name :-</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            class="bg-[#F5F5F5] py-2 px-3 rounded text-black w-full"
+          />
+          <label for="email" class="block">Email :-</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="bg-[#F5F5F5] py-2 px-3 rounded text-black w-full"
+          />
+          <label for="message">Message :-</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your message here..."
+            rows="3"
+            class="bg-[#F5F5F5] py-2 px-3 rounded text-black w-full"
+          ></textarea>
+
+          <p class="font-light text-base">Information</p>
+          <input type="checkbox" name="confirm" id="confirm" />
+          <label for="confirm" class="font-light text-base">
+            I consent to the processing of my personal data</label
+          ><br />
+          <button
+            class="text-center block px-6 hover:cursor-pointer mx-auto rounded py-2 bg-[#1D3752]"
+            type="button"
+          >
+            SEND
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section
+      class="contact-us flex flex-col md:flex-row app-container mx-auto md:my-20 gap-10 md:gap-30 justify-evenly py-10 h-96"
+    >
+      <div class="my-auto mx-auto">
+        <h2 class="font-semibold text-5xl mb-10">Contact</h2>
+        <address class="font-serif text-xl text-slate-700">
+          Consulting Group <br />
+          Golden st. 564 <br />00-453 Warsaw
+        </address>
+      </div>
+      <div class="rounded md:w-[calc(50%-60px)]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27444.613585414278!2d76.6971184!3d30.702183999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1765512462601!5m2!1sen!2sin"
+          style="border: 0"
+          class="w-full h-full"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="bg-[#1D3752] py-10 text-slate-300 mt-5">
+      <div
+        class="app-container flex justify-between mx-auto flex-wrap md:justify-items-center"
+      >
+        <div class="flex-[1_1_45%] md:flex-[1_1_30%]">
+          <a href="">
+            <i class="fa-solid fa-mobile"></i>
+            <span>+91 9876543210</span></a
+          >
+        </div>
+        <div class="flex-[1_1_45%] md:flex-[1_1_30%]">
+          <a href="mailto:xyz@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>xyz@gmail.com</span></a
+          >
+        </div>
+        <div
+          class="flex justify-center gap-3 flex-[1_1_100%] justify-self-center md:flex-[1_1_30%] mt-5 md:m-0"
+        >
+          <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+          <a href=""> <i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""> <i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
